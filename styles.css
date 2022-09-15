@@ -1,0 +1,224 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+ol, ul {
+	list-style: none;
+}
+
+h2{
+    margin-bottom: 30px;
+}
+
+
+.content {
+    display: flex;
+    height: auto;
+    width: 100vw;
+}
+.img{
+    background-image: url(imgs/leaf.jpg);
+    background-size:cover;
+    width: 37vw;
+    min-height: 100vh;
+    position: relative;
+}
+@font-face {
+    font-family: my-cool-font;
+    src: url(fonts/Norse-Bold.otf);
+  }
+.logo{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    position:absolute;
+    width: 100%;
+    top: 200px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: my-cool-font;
+    font-size: 5rem;
+    text-align: center;
+    color: gold
+
+   
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    color: white;
+    text-align: center;
+}
+
+footer a{
+    color: white;
+}
+.right{
+width: 63vw;
+display: flex;
+flex-direction: column;
+background-color:#f9fbfd;
+padding: 100px 100px 0px 50px;
+box-sizing: border-box;
+
+}
+.headings{
+    width:55ch;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.form-control{
+    padding-bottom: 40px;
+    position: relative;
+}
+input{
+    width : 300px;
+    height: 30px;
+    padding: 8px;
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid rgba(204, 195, 195, 0.39);
+  }
+  label{
+      font-size: 0.75rem;
+      font-family:'Courier New', Courier, monospace;
+      letter-spacing: 0.1rem;
+  }
+
+.data{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 50px;
+    background-color: white;
+    padding: 30px 30px 40px 30px;
+    box-sizing: border-box;
+    width: 100%;
+    box-shadow: 0 5px 5px 4px rgb(0 0 0 / 10%);
+    border: 1px dotted gray;
+}
+legend{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none;
+    color:#596D48;
+    font-weight: 800;
+    font-size: 1.15rem;
+}
+p{
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+button{
+      text-align: center;
+      padding: 10px 20px;
+      width: 250px;
+      margin: 30px 0px;
+      border-radius: 7px;
+      background-color: white;
+      border: 2px solid #596D48;
+      color: black;
+      font-size: 1.15rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.7s;
+}
+button:hover{
+    background-color: #596D48;
+    border:2px solid;
+    color:white;
+}
+button:active {
+    transform: scale(0.95);
+}
+.note{
+    position: relative;
+    top: 20px;
+    font-size: 1rem;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.459);
+}
+label::after{
+    content: "*";
+}
+
+.passReq span{
+    color: red;
+}
+.passReq{
+    font-size: 0.75rem;
+    font-style: italic;
+    position: absolute;
+}
+.passReq.visible{
+    visibility: visible;
+}
+
+.form-control i{
+    position: absolute;
+    right: 15px;
+    top:28px;
+    visibility: hidden;
+}
+.form-control small {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    visibility: hidden;
+}
+
+.form-control.success input {
+	border-color: #2ecc71;
+}
+.form-control.success:active{
+    border-color:#2ecc71 ;
+}
+
+.form-control.error input {
+	border-color: #e74c3c;
+}
+.form-control.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+.form-control.error small {
+	visibility: visible;
+    color: #e74c3c;
+    font-size: 15px;
+
+}

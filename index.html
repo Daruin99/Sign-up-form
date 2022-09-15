@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="js.js" defer></script>
+</head>
+<body>
+    <div class="content">
+        <div class="img">
+            <div class="logo"><img src="imgs/odin.png" alt="logo">Odin</div>
+            <footer>Photo by <a href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Halie West</a> on Unsplash</footer>
+        </div>
+        <div class="right">
+            <div class="headings">
+                <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</h2>
+                <h2>You <em>know</em> you want to.</h2>
+            </div>
+            <form action="#" method="get">
+                <fieldset class="data">
+                    <legend>Let's do this!</legend>
+                    <div class="form-control">
+                        <label for="firstName">FIRST NAME</label><br>
+                        <input type="text" id="firstName" name="firstName" required>
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error message</small>
+
+                    </div>
+                    <div class="form-control">
+                        <label for="lastName">LAST NAME</label><br>
+                        <input type="text" id="lastName" name="lastName" required>
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="email">EMAIL</label><br>
+                        <input type="email" id="email" name="email" required>
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="phone">PHONE NUMBER</label><br>
+                        <input type="tel" id="phone" name="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required>
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="password">PASSWORD</label><br>
+                        <input type="password" id="password" name="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+                        <div class="passReq"><span>*</span> Minimum 8 characters<br>
+                            <span>*</span> At least one UpperCase letter<br>
+                            <span>*</span> At least one special character or number<br>
+                        </div>
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                    </div>
+                    <div class="form-control">
+                        <label for="confirmPassword">CONFIRM PASSWORD</label><br>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <span class="note">Fields marked with an asterisk (*) are required</span>
+                </fieldset>
+                <div class="button">
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? <a href="#">Log In</a></p>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+</body>
+</html>
